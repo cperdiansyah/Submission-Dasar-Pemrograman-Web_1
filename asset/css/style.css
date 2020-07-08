@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif, 'Lato';
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 30px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+/*bagian header*/
+
+.main-header {
+    height: 75px;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    transition: all .5s ease-in-out;
+
+}
+
+.scroll-header {
+    height: 65px;
+    width: 100%;
+    /* background-color: rgba(130, 181, 233,0.9);*/
+    background-color: rgba(130, 181, 233, 0.9);
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 1px 5px 8px 0px rgba(0, 0, 0, 0.3);
+
+
+    transition: all .5s ease-in-out;
+}
+
+.logo {
+    background-image: url(../img/Genius%20Education%201.png) !important;
+    height: 55px;
+    width: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 10px 0;
+    transition: .5s ease-in-out;
+}
+
+.logo-header:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.left-header {
+    float: left;
+    height: 75px;
+}
+
+.left-header-scroll {
+    float: left;
+    height: 65px;
+}
+
+.right-header {
+    float: right;
+    margin: 0px;
+}
+
+.right-header ul {
+    margin: 0;
+}
+
+.right-header li {
+    float: left;
+    list-style: none;
+    margin-top: 0;
+}
+
+.nav-list {
+    line-height: 75px;
+    padding: 0 15px;
+    color: #000;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    font-size: 16.2px;
+}
+
+.right-header a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000;
+}
+
+.nav-list-scroll {
+    line-height: 65px;
+    padding: 0 15px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+    font-size: 16px;
+}
+
+.logo-sroll {
+    background-image: url(../img/Genius%20Education%201-white.png);
+    height: 55px;
+    width: 90px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5px 0;
+    transition: .5s ease-out-out;
+}
+
+.border {
+    border-bottom: 2px solid #239b76;
+    padding: 16px 0px;
+    transition: .5s ease-in-out;
+    width: 0px;
+}
+
+.right-header li:hover .border {
+    padding: 16px;
+    transition: .5s ease-in-out;
+    width: 75%;
+}
+
+/*bagian main*/
+/*Beranda*/
+.top-wrapper {
+    height: 675px;
+    background-image: url(../img/gedung-ui-5d25dd8d0d82300834242a15.jpg);
+    background-size: cover;
+    opacity: 0.85;
+}
+
+.top-wrapper .container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-wrapper p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.heading {
+    color: #fff;
+    font-family: sans-serif;
+    text-shadow: 3px 3px 3px rgba(94, 94, 94, 1);
+    padding-top: 6.5em;
+    opacity: 0.9;
+    text-align: center;
+    margin: auto;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.heading h2 {
+    margin: 10px 0 40px 0;
+    font-size: 30px;
+
+}
+
+.top-wrapper p {
+    margin: 15px auto;
+    width: 560px;
+    color: black;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.daftar {
+    background-color: #239b76;
+    margin: 0 auto;
+}
+
+/*Tentang*/
+.about-wrapper {
+    height: 600px;
+    background-color: aqua;
+}
