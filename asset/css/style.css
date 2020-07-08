@@ -135,11 +135,12 @@ a {
     background-repeat: no-repeat;
     display: block;
     margin: 5px 0;
-    transition: .5s ease-out-out;
+    transition: .5s ease-in-out;
+
 }
 
 .border {
-    border-bottom: 2px solid #239b76;
+    border-bottom: 2px solid #f4f6ff;
     padding: 16px 0px;
     transition: .5s ease-in-out;
     width: 0px;
