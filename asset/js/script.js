@@ -1,3 +1,5 @@
+/*window.alert("Disclaimer!!! Seluruh konten yang ada di dalam web ini adalah fiksi belaka. Asset gambar yang tersedia diambil dari Google Image untuk kebutuhan Submission :)");*/
+
 window.addEventListener('scroll', function (e) {
     //Scrolling fx nav bar
     var nav = document.getElementById('nav');
@@ -46,5 +48,22 @@ window.addEventListener('scroll', function (e) {
             list[i].classList.remove('nav-list-scroll');
         }
     }    
-
 });
+
+window.addEventListener('scroll', function (e) {
+    //Scrolling fx nav bar list
+    var border = document.getElementsByClassName('bd');
+
+    for (var i = 0; i < border.length; i++) {
+        if (document.documentElement.scrollTop || document.body.scrollTop > window.innerHeight) {
+            border[i].classList.add('border-scroll');
+            border[i].classList.remove('border');
+        } else {
+            border[i].classList.add('border');
+            border[i].classList.remove('border-scroll');
+        }
+    }    
+});
+
+
+
