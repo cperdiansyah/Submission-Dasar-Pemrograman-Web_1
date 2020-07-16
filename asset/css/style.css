@@ -171,7 +171,7 @@ li {
 .border-scroll {
     border-bottom: 2px solid #f4f6ff;
     padding: 16px 0px;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
     width: 0px;
 }
 
@@ -246,7 +246,7 @@ li {
     background-color: #fff;
     margin: auto;
     position: relative;
-    background-image: url(../img/v748-toon-27_1_1.jpg) !important;
+    background-image: url(../img/3132.jpg) !important;
     background-size: cover;
 
 }
@@ -255,8 +255,12 @@ li {
     display: flex;
     flex: 1;
     height: 100%;
+}
 
-
+.about-wrapper h1 {
+    color: #777284;
+    font-size: 38px;
+    padding: 80px 0 40px 0;
 }
 
 figure {
@@ -409,9 +413,11 @@ figure img {
 .text {
     padding: 8% 0 0 0;
 }
-.contact-wrapper{
+
+.contact-wrapper {
     text-align-last: center;
 }
+
 .contact-wrapper h2 {
     font-size: 28px;
     text-align: center;
@@ -424,19 +430,22 @@ figure img {
     margin-top: 30px;
     border-radius: 10px;
 }
-.social-contact{
+
+.social-contact {
     width: auto;
     margin-top: 10em;
 }
-.contact-list{
+
+.contact-list {
     display: flex;
     flex: 1;
-    width:250px;
-    
-    margin: 10px auto ;
+    width: 250px;
+
+    margin: 10px auto;
     padding: 0 auto;
 }
-.contact-list span{
+
+.contact-list span {
     font-size: 1.8em !important;
     padding: 0 15px;
     cursor: pointer;
@@ -460,10 +469,196 @@ figure img {
 
 }
 
-/*Aside*/
-aside {
+/*Dev*/
+.dev-wrapper {
     height: 660px;
-    background-color: blue;
+    background-image: url(../img/bg-content2.png);
+}
+
+.about-me {
+    display: flex;
+    float: left;
+    flex: 2;
+
+
+}
+
+.dev-wrapper h1 {
+    padding-bottom: 30px;
+    padding-top: 70px;
+
+}
+
+aside {
+    width: 285px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px 10px;
+    flex-direction: column;
+}
+
+aside img {
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.general-top {
+    display: flex;
+    text-align: center;
+
+}
+
+.general-top figcaption {
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.general-top p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.general-bottom {
+    padding: 0 15px;
+    padding-top: 10px;
+}
+
+.general-bottom p {
+    font-size: 14px;
+    width: 280px;
+}
+.general-bottom a{
+    color: #000;
+}
+.general-bottom .wa:hover .fa-whatsapp{
+    color: #25d366 !important;
+}
+.general-bottom a:hover{
+    text-shadow: 3px 3px 3px rgba(94, 94, 94, 0.3);
+    
+
+}
+
+.general-bottom span {
+    font-size: 18px;
+}
+
+.first {
+    margin-top: 0px;
+}
+
+.fa-birthday-cake {
+    margin-right: 7px;
+}
+
+.fa-whatsapp {
+    margin-right: 7px;
+}
+
+.fa-envelope {
+    margin-right: 5px;
+}
+
+.advance-info {
+    width: 800px;
+    height: 450px;
+    text-align: justify;
+    margin: 0 20px 0 40px;
+}
+
+.vertical {
+    display: flex;
+
+}
+
+.advance-info h2 {
+    padding: 0;
+}
+
+.bio {
+    width: 400px;
+}
+
+.educations {
+    padding-left: 30px;
+
+}
+
+.education p {
+    padding: 5px auto;
+    margin: 5px auto;
+}
+
+.education h4 {
+    padding: 0px auto;
+    margin: 0 auto;
+}
+
+.SMA {
+    padding-top: 20px;
+}
+
+.my-social {
+    text-align: center;
+    width: 800px;
+    height: 250px;
+}
+
+.my-social h2 {
+    padding-bottom: 20px;
+}
+
+.social-media ul {
+    padding: 0 8%;
+    height: 50px;
+
+}
+
+.social-list a {
+    color: #000;
+    font-size: 2.4em !important;
+    width: 50px;
+
+}
+
+.social-media li {
+    padding: 0 40px;
+    float: left;
+}
+
+.social-list .fa-linkedin {
+    color: #007AB5;
+}
+
+.social-list .fa-facebook {
+    color: #3b5998;
+}
+
+.social-list .fa-twitter {
+    color: #55acee;
+}
+
+.social-list .fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-list {
+    transition: ease all 0.3s;
+
+}
+
+.social-list:hover {
+    font-size: 1.1em;
+    text-shadow: 3px 3px 3px rgba(94, 94, 94, 0.5);
+    transition: ease all 0.3s;
+
 }
 
 /*up*/
@@ -497,8 +692,7 @@ aside {
 footer {
     color: #d3d3d3;
     margin: auto;
-    height: 300px;
-    position: relative;
+
 }
 
 .upper-footer {
@@ -534,6 +728,8 @@ footer {
 .footer-section {
     width: 220px;
     padding: 0 auto;
+    margin: 0 auto;
+
 }
 
 .footer-content h3 {
@@ -562,6 +758,7 @@ footer {
 
 .social {
     margin: 0 auto;
+    width: 230px;
 }
 
 .social ul {
