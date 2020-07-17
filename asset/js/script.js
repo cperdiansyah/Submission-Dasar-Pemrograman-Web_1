@@ -1,4 +1,4 @@
-window.alert("Disclaimer!!! Seluruh konten yang ada di dalam web ini adalah fiksi belaka. Asset gambar yang tersedia diambil dari Google Image untuk kebutuhan Submission ☺");
+window.alert("Disclaimer!!! Seluruh konten yang ada di dalam web ini adalah fiksi belaka. Seluruh konten merupakan kahayalan dan Asset gambar yang tersedia diambil dari Google Image untuk kebutuhan Submission ☺");
 
 window.addEventListener('scroll', function (e) {
     //Scrolling fx nav bar
