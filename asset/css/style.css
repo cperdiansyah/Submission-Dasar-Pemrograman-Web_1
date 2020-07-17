@@ -51,15 +51,44 @@ li {
 }
 
 /*bagian header*/
+.menu-icon {
+    color: #000;
+    float: right;
+    font-size: 25px;
+    padding: 21px 10px;
+    transition: .5s ease-in-out;
+}
+
+#icon {
+    display: none;
+}
+
+.menu-icon-scroll {
+    color: #fff;
+    float: right;
+    font-size: 23px;
+    padding: 21px 10px;
+    display: none;
+    transition: .5s ease-in-out;
+}
+.menu-icon:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: 25px;
+}
+
+.menu-icon-scroll:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    line-height: 23px;
+}
 
 .main-header {
-    height: 75px;
     width: 100%;
     height: 75px;
     position: fixed;
     top: 0;
     z-index: 10;
     transition: all .5s ease-in-out;
+
 
 }
 
@@ -73,8 +102,6 @@ li {
     top: 0;
     z-index: 10;
     box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.3);
-
-
     transition: all .5s ease-in-out;
 }
 
@@ -132,6 +159,7 @@ li {
     background-color: rgba(255, 255, 255, 0.3);
     color: #000;
 }
+
 
 .nav-list-scroll {
     line-height: 65px;
@@ -255,6 +283,7 @@ li {
     display: flex;
     flex: 1;
     height: 100%;
+    width: 100%;
 }
 
 .about-wrapper h1 {
@@ -306,6 +335,11 @@ figure img {
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+    padding: 0 30px 0 0;
+    height: auto;
+    background-color: #f7f7f7;
+    text-align: center;
+
 }
 
 .features-wrapper h1 {
@@ -319,13 +353,6 @@ figure img {
     padding-top: 0px;
 }
 
-.features-wrapper {
-    padding: 0 30px 0 0;
-    height: auto;
-    background-color: #f7f7f7;
-    /*background-color: #fff;*/
-    text-align: center;
-}
 
 .features-wrapper p {
     padding: 15px 10%;
@@ -473,14 +500,7 @@ figure img {
 .dev-wrapper {
     height: 660px;
     background-image: url(../img/bg-content2.png);
-}
-
-.about-me {
-    display: flex;
-    float: left;
-    flex: 2;
-
-
+    background-repeat: repeat;
 }
 
 .dev-wrapper h1 {
@@ -489,8 +509,17 @@ figure img {
 
 }
 
+/*Informasi saya bagian kiri*/
+.about-me {
+    width: 100%;
+}
+
+.general-info {
+    float: left;
+    width: 25%;
+}
+
 aside {
-    width: 285px;
     height: 450px;
     background-color: rgba(255, 255, 255, 0.4);
     box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.1);
@@ -500,13 +529,21 @@ aside {
 }
 
 aside img {
-    width: 150px;
+    width: 170px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
+    margin: 0 auto;
+}
+
+.general-top figure {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 .general-top {
     display: flex;
+    flex-direction: column;
     text-align: center;
 
 }
@@ -522,23 +559,29 @@ aside img {
 }
 
 .general-bottom {
-    padding: 0 15px;
-    padding-top: 10px;
+    padding: 0 5px;
+    padding-top: 15px;
 }
 
 .general-bottom p {
     font-size: 14px;
-    width: 280px;
+    width: 98%;
 }
-.general-bottom a{
+
+#email {
+    font-size: 12px;
+}
+
+.general-bottom a {
     color: #000;
 }
-.general-bottom .wa:hover .fa-whatsapp{
+
+.general-bottom .wa:hover .fa-whatsapp {
     color: #25d366 !important;
 }
-.general-bottom a:hover{
+
+.general-bottom a:hover {
     text-shadow: 3px 3px 3px rgba(94, 94, 94, 0.3);
-    
 
 }
 
@@ -562,29 +605,48 @@ aside img {
     margin-right: 5px;
 }
 
+
+
+/*Informasi saya bagian kanan*/
 .advance-info {
-    width: 800px;
+    width: 70%;
+    height: 500px;
+    float: left;
+    margin: 0;
+}
+
+.info {
+    width: 100%;
     height: 450px;
+    margin: 0 20px 0 30px;
     text-align: justify;
-    margin: 0 20px 0 40px;
-}
-
-.vertical {
     display: flex;
-
+    flex-direction: column;
 }
 
-.advance-info h2 {
-    padding: 0;
+
+.dev-wrapper h2 {
+    margin-top: 0;
+}
+
+.horizontal {
+    float: left;
+    height: 60%;
+    padding-bottom: 20px;
 }
 
 .bio {
-    width: 400px;
+    width: 300px;
+    width: 45%;
+    float: left;
 }
 
 .educations {
-    padding-left: 30px;
+    width: 250px;
+    width: 40%;
 
+    margin: 0 0 0 20px;
+    float: left;
 }
 
 .education p {
@@ -603,31 +665,35 @@ aside img {
 
 .my-social {
     text-align: center;
-    width: 800px;
+    width: 300px;
     height: 250px;
+    height: 40%;
+    width: 90%;
 }
 
 .my-social h2 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.social-media li {
+    width: 95%;
+    padding: 0 auto;
+
 }
 
 .social-media ul {
-    padding: 0 8%;
-    height: 50px;
-
+    padding: 0px 20px;
+    display: inline-flex;
+    flex: 2;
 }
 
 .social-list a {
     color: #000;
     font-size: 2.4em !important;
-    width: 50px;
-
+    width: 50px !important;
+    margin: 20px;
 }
 
-.social-media li {
-    padding: 0 40px;
-    float: left;
-}
 
 .social-list .fa-linkedin {
     color: #007AB5;
@@ -661,6 +727,7 @@ aside img {
 
 }
 
+
 /*up*/
 .up {
     display: block;
@@ -692,12 +759,14 @@ aside img {
 footer {
     color: #d3d3d3;
     margin: auto;
+    width: 100%;
 
 }
 
 .upper-footer {
     background: #303036;
-    height: auto;
+    height: 80%;
+
 }
 
 .bottom-footer {
@@ -712,22 +781,21 @@ footer {
 .copyright {
     padding: 0;
     margin: 0;
-
 }
 
 .footer-content {
+    /*
     display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
-    padding-bottom: 10px;
-    width: 100%;
-    max-width: 1170px;
+    grid-template-columns: auto auto auto;*/
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 95%;
     margin: auto;
 }
 
 .footer-section {
-    width: 220px;
-    padding: 0 auto;
+    padding: 0 10px;
     margin: 0 auto;
 
 }
@@ -739,30 +807,38 @@ footer {
 
 .tentang {
     padding: 0 auto;
-    width: 350px;
+    width: 40%;
     text-align: justify;
+
 }
 
 .layanan {
+    width: 20%;
     margin: 0 auto;
+    padding: 0 auto;
 }
 
 .layanan p {
-    margin: 10px;
+    width: 80%;
+    margin: 5px auto;
 }
 
+
 .layanan a {
-    color: #fff !important;
+    color: #d3d3d3 !important;
     font-size: 15px;
 }
 
 .social {
     margin: 0 auto;
-    width: 230px;
+    width: 35%;
+    padding: 0 auto;
+
 }
 
-.social ul {
-    margin: 16px 60px;
+.footer-list li {
+    width: 45%;
+    margin: 5px auto;
 }
 
 /*Social Media beserta Hovernya*/
@@ -776,7 +852,7 @@ footer {
 }
 
 .social a {
-    color: #fff;
+    color: #d3d3d3;
     margin-left: 5px;
 }
 

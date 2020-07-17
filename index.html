@@ -4,14 +4,12 @@
 <head>
     <meta name="view" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="asset/css/style.css">
-    <link rel="stylesheet" href="asset/css/responsive.css">
+    <link rel="stylesheet" href="asset/css/style.min.css">
+    <link rel="stylesheet" href="asset/css/responsive.min.css">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
-    <script language="JavaScript" type="text/javascript" src="./asset/js/script.js"></script>
+    <script language="JavaScript" type="text/javascript" src="./asset/js/script.min.js"></script>
     <script src="https://kit.fontawesome.com/f3a0e80f3e.js" crossorigin="anonymous"></script>
-    
-    <script src="http://localhost:35729/livereload.js"></script>
-    <title>Genius Education</title>
+    <title>Genius Education | Landing Page</title>
 </head>
 
 <body>
@@ -20,8 +18,10 @@
             <div class="left-header logo-header" id="leftHeader">
                 <p class="logo" id="logo-id"></p>
             </div>
+
+            <span class="fa fa-bars menu-icon menu-mobile" id="icon"></span>
             <div class="right-header">
-                <ul>
+                <ul class="topnav">
                     <li class="navbar"><a href="#beranda" class="nav-list list to-top">Beranda</a>
                         <p class="border bd"></p>
                     </li>
@@ -34,6 +34,10 @@
                     <li class="navbar"><a href="#kontak" class="nav-list list">Daftar</a>
                         <p class="border bd"></p>
                     </li>
+                    <li class="navbar"><a href="#tentang" class="nav-list list">Me</a>
+                        <p class="border bd"></p>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -52,7 +56,6 @@
                 <a href="#kontak" class="btn daftar">Daftar Sekarang Juga</a>
             </div>
         </div>
-
         <div class="about-wrapper" id="profil">
             <div class="headings">
                 <h1>Profil</h1>
@@ -143,7 +146,6 @@
 
             </div>
         </div>
-
         <div class="contact-wrapper" id="kontak">
             <div class="container">
                 <div class="text">
@@ -161,58 +163,65 @@
             </div>
         </div>
 
-        <div class="dev-wrapper">
+        <div class="dev-wrapper" id="tentang">
             <div class="container">
                 <div class="headings">
                     <h1>Tentang Saya</h1>
                 </div>
                 <div class="about-me">
                     <aside class="general-info">
-                        <div class="general-top">
-                            <figure>
-                                <img src="asset/img/rsz_foto_bts.jpg" alt="foto_chandra">
-                                <figcaption>Chandra Perdiansyah</figcaption>
-                                <p>Junior Web Developer</p>
-                            </figure>
-                        </div>
-                        <div class="general-bottom">
-                            <p class="first"><span class="fas fa-birthday-cake"></span> : 3 Oktober 2000</p>
-                            <p><span class="fas fa-graduation-cap"></span> : Mahasiswa</p>
-                            <p class="wa"><span class="fab fa-whatsapp"></span> : <a href="https://wa.me/6283893093443">(+62) 838 9309 3443</a></p>
-                            <p><span class="far fa-envelope"></span> : chandraperdiansyah@gmail.com</p>
+                        <div class="my-info">
+                            <div class="general-top">
+                                <figure>
+                                    <img src="asset/img/rsz_foto_bts.jpg" alt="foto_chandra">
+                                    <figcaption>Chandra Perdiansyah</figcaption>
+                                    <p>Junior Web Developer</p>
+                                </figure>
+                            </div>
+                            <div class="general-bottom">
+                                <p class="first"><span class="fas fa-birthday-cake"></span> : 3 Oktober 2000</p>
+                                <p><span class="fas fa-graduation-cap"></span> : Mahasiswa</p>
+                                <p class="wa"><span class="fab fa-whatsapp"></span> : <a href="https://wa.me/6283893093443">(+62) 838 9309 3443</a></p>
+                                <p id="email"><span class="far fa-envelope"></span> : <a href="mailto:chandraperdiansyah@gmail.com">chandraperdiansyah@gmail.com</a></p>
+                            </div>
                         </div>
                     </aside>
                     <div class="advance-info">
-                        <div class="vertical">
-                            <div class="bio">
-                                <h2>Bio</h2>
-                                <p>Halo nama saya Chandra Perdiansyah, saat ini saya menempuh pendidikan Diploma 3 di Universitas Satya Negara Indonesia (USNI) dengan prodi Manajemen Informatika. Saat ini saya dengan berusaha mendalami lebih lanjut tentang bahasa pemgrograman web karena saya ingin lebih fokus ke Web Developer untuk karir saya.</p>
-                            </div>
-                            <div class="educations">
-                                <h2>Pendidikan Formal</h2>
-                                <div class="education">
-                                    <h4>Universitas Satya Negara Indonesia (2018 - 2021)</h4>
-                                    <p>Manajemen Informatika</p>
+                        <div class="info">
+                            <div class="horizontal">
+                                <div class="bio">
+                                    <h2>Bio</h2>
+                                    <p>Halo nama saya Chandra Perdiansyah, saat ini saya menempuh pendidikan Diploma 3 di Universitas Satya Negara Indonesia (USNI) dengan prodi Manajemen Informatika. Saat ini saya dengan berusaha mendalami lebih lanjut tentang bahasa pemgrograman web karena saya ingin lebih fokus ke Web Developer untuk karir saya.</p>
                                 </div>
-                                <div class="education">
-                                    <h4 class="SMA">SMAN 86 Jakarta (2015 - 2018)</h4>
-                                    <p>IPS</p>
+                                <div class="educations">
+                                    <h2>Pendidikan Formal</h2>
+                                    <div class="education">
+                                        <h4>Universitas Satya Negara Indonesia (2018 - 2021)</h4>
+                                        <p>D3 - Manajemen Informatika</p>
+                                    </div>
+                                    <div class="education">
+                                        <h4 class="SMA">SMAN 86 Jakarta (2015 - 2018)</h4>
+                                        <p>IPS</p>
+                                    </div>
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="my-social">
-                            <h2>Ikuti Media Sosial Saya</h2>
-                            <div class="social-media">
-                                <ul>
-                                    <li class="git social-list"><a href="https://github.com/cperdiansyah" class="fab fa-github"></a></li>
-                                    <li class="in social-list"><a href="https://www.linkedin.com/in/cperdiansyah/" class="fab fa-linkedin"></a></li>
-                                    <li class="fb social-list"><a href="http://fb.me/chandra.perdiansyah" class="fa fa-facebook"> </a></li>
-                                    <li class="ig social-list"><a href="http://instagram.com/chandraper_" class="fa fa-instagram"></a></li>
-                                    <li class="tw social-list"><a href="https://twitter.com/cperdiansyaah" class="fa fa-twitter"></a></li>
-                                </ul>
+
+                            <div class="my-social">
+                                <h2>Ikuti Media Sosial Saya</h2>
+                                <div class="social-media">
+                                    <ul>
+                                        <li class="git social-list"><a href="https://github.com/cperdiansyah" target="_blank" class="fab fa-github"></a></li>
+                                        <li class="in social-list"><a href="https://www.linkedin.com/in/cperdiansyah/" target="_blank" class="fab fa-linkedin"></a></li>
+                                        <li class="fb social-list"><a href="http://fb.me/chandra.perdiansyah" target="_blank" class="fa fa-facebook"> </a></li>
+                                        <li class="ig social-list"><a href="http://instagram.com/chandraper_" target="_blank" class="fa fa-instagram"></a></li>
+                                        <li class="tw social-list"><a href="https://twitter.com/cperdiansyaah" target="_blank" class="fa fa-twitter"></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -259,7 +268,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 
