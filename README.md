@@ -3,6 +3,8 @@
 Disclaimer!!! Seluruh konten yang ada di dalam web ini adalah fiksi belaka. 
 Asset gambar yang tersedia diambil dari Google Image untuk kebutuhan Submission ☺
 
+Submission ini dibuat dengan menggunakan bahasa HTML, CSS dan Javascript murni tanpa  danya Framwork dikarnakan peraturan submission melarang penggunaan framework, tentunya di dummy project kali ini masih  banyak kekurangan, dan saya akan memperbaikinya di project-project selanjutnya
+
 # Screenshoot
 ![Dekstop_1](https://user-images.githubusercontent.com/66311673/90302011-8b99dd00-decd-11ea-9101-02b7ca28ade3.jpg)
 ![Dekstop_2](https://user-images.githubusercontent.com/66311673/90302012-8f2d6400-decd-11ea-96d3-84467b8bf574.jpg)
